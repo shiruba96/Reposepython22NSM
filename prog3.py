@@ -1,7 +1,9 @@
-# convertir de grados Fahrenheit a grados Celsius.
+#Introducir base y altura de un triangulo y compute su area
 
-print ("Ingrese la temperatura en grados Fahrenheit")
-f= float (input ())
-#formula para convertir F a C
-c = (f - 32) / 1.8
-print ("son", c, "grados celsius")
+print ("Ingrese la base del triangulo")
+b = float (input ())
+print ("Ingrese la altura del triangulo")
+h = float (input ())
+#Calcular area 
+a = (b * h)/2  
+print ("el area es", a)
