@@ -1,8 +1,10 @@
-#Aceptar el radio de un circulo y compute su area 
-
-print ("Ingrese el valor del radio del circulo")
-r = float (input ())
-#Calcular area 
-r2 = (r * r)
-a = (3.1416) * r2
-print ("el area es", a)
+import math
+cateto_a = 0.0
+cateto_o = 0.0
+print ("dame la longiud de la hipotenusa")
+h= float (input ())
+print ("dame el cateto adyacente")
+cateto_a = float (input())
+x = cateto_a /h
+cateto_o=math.sin(math.acos(x))*h
+print ("el cateto opuesto es:", cateto_o)
