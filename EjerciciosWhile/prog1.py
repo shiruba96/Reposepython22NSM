@@ -1,9 +1,15 @@
-#Elabore un programa que muestre los números enteros en forma descendente deun número a otro dado. 
-# Los números se pueden dar en cualquier orden.
+#Elabore un programa que muestre los números enteros en forma descendente de un número a otro dado los 
+# números se pueden dar en cualquier orden.
 
-print ("cuantos numero vamos a ordenar")
-n = int (input ())
-while n != 0 :
-    print ("Ingrese un numero")
-    cad = [] (input ())
-cad.sort(reverse=True)
+print ("Ingresa el numero con el que vamos a iniciar")
+ni = int (input ())
+print ("Ingresa el numero con el que vamos a finalizar")
+nf = int (input ())
+if ni < nf:
+    aux = ni 
+    ni = nf
+    nf = aux
+print ("Lista ordenada")
+while ni >= nf:
+    print (ni)
+    ni -= 1
