@@ -1,0 +1,31 @@
+#Elaborar un programa que solicite al usuario como dato de entrada una calificación y muestre una leyenda
+# 10 Excelente, 9 Muy bien, 8 Bien, 7 Regular, 6 Mal, 5 a 0 Muy mal
+
+while True:
+    try:
+        print ("Ingrese la calificacion: ")
+        cal = float (input ())
+        break
+    except ValueError:
+        print ("El sistema de evaluacion que se maneja es del 0 al 10")
+        
+if cal <= 5:
+    message = "Muy mal"
+    print (message)
+elif cal == 6:
+    message = "Mal"
+    print (message)
+elif cal == 7:
+    message = "Regular"
+    print (message)
+elif cal == 8:
+    message = "Bien"
+    print (message)
+elif cal == 9:
+    message = "Muy bien"
+    print (message)
+else :
+    message = "Excelente"
+    print (message)
+
+
